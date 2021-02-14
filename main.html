@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--You may need to give permissions to autoplay video and audio.--> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Broski">
+        <title>Broski's Webpage</title>
+        <link rel='icon' href="Media/favicon.png">
+    </head>
+    <body>
+        <h1>Hello World! <br>Here's a few very random videos and images.</h1>
+        <p class='media_1'>
+            <img src='Media/Deepfried_Man_Smiling.jpg' width="250" height="250" alt='Deepfried Man Smiling.'>
+            <video src='Media/SergalSpin.mp4' width="250" height="250" alt='Sergal Spin' autoplay='True' loop='True'</video>
+        </p>
+        <p class='media_2'>
+            <video src='Media/GrowTime.mp4' width="250" height="250" alt='Grow Time' autoplay='True' loop='True'</video>
+        </p>
+    <div class='button_1'>
+        <button type="button" id='view_dir'>Click to view website directory.</button><br>
+    </div>
+    </body>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        body {
+            background-color: black;
+        }
+        .media_1, .media_2 {
+            text-align: center;
+                }
+        div.button_1 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        (function () {
+        console.log('Connected to', location + '!');
+    }());
+    document.getElementById('view_dir').onclick = function() {
+        OnClick()
+    };
+        function OnClick () {
+            var x = '/Website/'
+            window.open(x);
+        };
+    </script>
+    <noscript>Sorry it appears your browser dose not support Javascript, or something is blocking it.</noscript>
+</html>
